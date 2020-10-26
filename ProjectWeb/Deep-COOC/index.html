@@ -1,0 +1,248 @@
+﻿<!DOCTYPE HTML>
+<!--
+	This website page is modified by Ya-Fang Shih from the theme Prologue provided by HTML5 UP.
+	Apr. 25, 2017
+
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Deep Co-occurrence Feature Learning for Visual Object Recognition</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/extra.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#home" id="home-link" class="skel-layers-ignoreHref"><span>Deep Co-occurrence</span></a></li>
+								<li><a href="#abstract" id="abstract-link" class="skel-layers-ignoreHref"><span>Abstract</span></a></li>
+								<li><a href="#paper" id="paper-link" class="skel-layers-ignoreHref"><span>Paper</span></a></li>
+								<li><a href="#result" id="result-link" class="skel-layers-ignoreHref"><span>Result</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span>Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="home" class="one"> 
+						<div class="container">
+
+							<header>
+								<h2 class="alt"><strong>Deep Co-occurrence Feature Learning for Visual Object Recognition</strong></a><br /></h2>
+							</header>
+							<header>
+								<h4>Ya-Fang Shih∗, Yang-Ming Yeh∗, Yen-Yu Lin, <br />Ming-Fang Weng, Yi-Chang Lu, and Yung-Yu Chuang</h4>
+							</header>
+							<img class="image illus" src="images/illustration.png" alt="" />
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="abstract" class="two">
+						<div class="container">
+
+							<header>
+								<h3>Abstract</h3>
+							</header>
+
+							<p>This paper addresses three issues in integrating part-based representations into convolutional neural networks (CNNs) for object recognition. First, most part-based models rely on a few pre-specified object parts. However, the optimal object parts for recognition often vary from category to category. Second, acquiring training data with part-level annotation is labor-intensive. Third, modeling spatial relationships between parts in CNNs often involves an exhaustive search of part templates over multiple network streams. </p>
+							<p>We tackle the three issues by introducing a new network layer, called co-occurrence layer. It can extend a convolutional layer to encode the co-occurrence between the visual parts detected by the numerous neurons, instead of a few pre-specified parts. To this end, the feature maps serve as both filters and images, and mutual correlation filtering is conducted between them. The co-occurrence layer is end-to-end trainable. The resultant co-occurrence features are rotation- and translation-invariant, and are robust to object deformation. </p>
+							<p>By applying this new layer to the VGG-16 and ResNet-152, we achieve the recognition rates of 83.6% and 85.8% on the Caltech-UCSD bird benchmark, respectively.</p>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="paper" class="one">
+						<div class="container">
+
+							<header>
+								<h3>Paper</h3>
+							</header>
+
+							<a target="_blank" href="file/Deep Co-occurrence Feature Learning for Visual Object Recognition.pdf" class="image featured"><img src="images/coocpaperthumbnail.png" alt="" /></a>
+							
+							<header>
+							<h5>Citation</h5> 
+							</header>
+						
+						<div class="responsive-table">
+						      <table class="cite">
+						        <tbody>
+					        	<tr>
+					            <td>@inproceeding{</td>
+					            <td>Deepcooc, </td>
+						          </tr>
+						          <tr>
+						            <td></td>
+						            <td>title = {Deep Co-occurrence Feature Learning for Visual Object Recognition}, </td>
+						          </tr>
+						          <tr>
+						            <td></td>
+						            <td>author = {Shih, Ya-Fang and Yeh, Yang-Ming and Lin, Yen-Yu and Weng, Ming-Fang and Lu, Yi-Chang and Chuang, Yung-Yu},</td>
+						          </tr>
+						           <tr>
+						            <td></td>
+						            <td>booktitle = {IEEE Conferene on Computer Vision and Pattern Recognition},</td>
+						          </tr>
+						          <tr>
+						            <td></td>
+						            <td>year = {2017}</td>
+						          </tr>
+						          <tr>
+					            <td>}</td>
+					            <td></td>
+						          </tr>
+						        </tbody>
+						      </table>
+						</div>
+
+						<br/><br/>
+						<header>
+						<h5>Code</h5> 
+						</header>
+						<ul class="icons">
+						<li><p>The codes for reproducing the result of ResNet-152 + 3 co-occurrence layers (accuracy: 85.8%) will be available at github.<br /><br /></p><a target="_blank" href="https://github.com/yafangshih/Deep-COOC" class="icon label2 fa-github"><span class="label">Github</span></a></li>
+						</ul>
+					</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="result" class="two">
+						<div class="container">
+
+							<header>
+								<h3>Result on Caltech-UCSD</h3> 
+							</header>
+
+						<div class="responsive-table">
+						      <table class="bordered striped">
+						        <thead>
+						          <tr>
+						              <th data-field="net">network</th>
+						              <th data-field="dim">feature dimension</th>
+						              <th data-field="acc">accuracy</th>
+						          </tr>
+						        </thead>
+						        <tbody>
+					        	  <tr>
+						            <td>VGG-16</td>
+						            <td>4.9k</td>
+						            <td>70.4%</td>
+						          </tr>	
+						          <tr>
+						            <td>VGG-16 feature <i>concat</i> VGG-16 <span style="font-weight:bold;">+ 3 co-occurrence layers</span></td>
+						            <td>54.1k</td>
+						            <td><span style="font-weight:bold;">83.6%</span></td>
+						          </tr>		
+						          <tr>
+						            <td>ResNet-152</td>
+						            <td>2.0k</td>
+						            <td>73.3%</td>
+						          </tr>
+
+						          <tr>
+						            <td>ResNet-152 <span style="font-weight:bold;">+ 3 co-occurrence layers</span></td>
+						            <td>49.2k</td>
+						            <td><span style="font-weight:bold;">85.8%</span></td>
+						          </tr>
+						        </tbody>
+						      </table>
+						</div>
+						<br/><br/>
+						<header>
+							<h5>Visualization</h5> 
+						</header>
+						<p>Visualization of five co-occurrence features, each in a row, that are the most influential for bird species <i>parakeet auklet, painted bunting, bronzed cowbird, least flycatcher, </i>and <i>ovenbird</i>, respectively. The co-occurrence features can detect object parts robustly against variations of poses and viewpoints</p><br />
+
+						<img class="image featured" src="images/visualization/1.png" alt="" />
+						<img class="image featured" src="images/visualization/2.png" alt="" />
+						<img class="image featured" src="images/visualization/3.png" alt="" />
+						<img class="image featured" src="images/visualization/4.png" alt="" />
+						<img class="image featured" src="images/visualization/5.png" alt="" />
+						
+						</div>
+					</section>
+
+					<section id="contact" class="one">
+						<div class="container">
+
+							<header>
+								<h3>Contact</h3>
+							</header>
+
+							<ul id = "member-list">
+								<li>
+									<div class= "member">
+										<a target="_blank" href="https://yafangshih.github.io"><img src="images/yfshih.png"/></a>
+										<p> Ya-Fang Shih </p>
+										<ul class="icons">
+										<li><a href="https://github.com/yafangshih" class="icon circle fa-github"><span class="label">Github</span></a></li>
+										<li><a href="mailto:yfshih.tw@gmail.com" class="icon circle fa-envelope-o"><span class="label">Email</span></a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class= "member">
+										<a target="_blank" href="http://cvlab.citi.sinica.edu.tw/people"><img src="images/ymyeh.png"/></a>
+										<p> Yang-Ming Yeh </p>
+										<ul class="icons">
+										<li><a href="mailto:adamyeh@iis.sinica.edu.tw" class="icon circle fa-envelope-o"><span class="label">Email</span></a></li>
+									</ul>
+									</div>
+								</li>
+								<li>
+									<div class= "member">
+										<a target="_blank" href="https://www.citi.sinica.edu.tw/pages/yylin/"><img src="images/yylin.jpg"/></a>
+										<p> Yen-Yu Lin </p>
+										<ul class="icons">
+										<li><a href="mailto:yylin@citi.sinica.edu.tw" class="icon circle fa-envelope-o"><span class="label">Email</span></a></li>
+									</ul>
+									</div>
+								</li>
+								</ul>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>CVLab, Academia Sinica &copy; 2017</li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

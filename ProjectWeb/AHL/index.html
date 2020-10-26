@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>AHL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/extra.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+							
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
+								<li><a href="#abstract" id="abstract-link" class="skel-layers-ignoreHref"><span class="icon fa-file-text-o">Abstract</span></a></li>
+								<li><a href="#paper" id="paper-link" class="skel-layers-ignoreHref"><span class="icon fa-book">Paper</span></a></li>
+								<li><a href="#method" id="method-link" class="skel-layers-ignoreHref"><span class="icon fa-pencil">Method</span></a></li>
+								<li><a href="#result" id="result-link" class="skel-layers-ignoreHref"><span class="icon fa-bar-chart">Result</span></a></li>
+								<li><a href="#code" id="code-link" class="skel-layers-ignoreHref"><span class="icon fa-hand-rock-o">Code and Dataset</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							<!--
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							-->	
+							</ul>
+						</nav>
+
+				</div>
+
+
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- AHL -->
+					<section id="top" class="one">
+						<div class="container">
+							<header>
+								<h2 class="alt"><strong>Learning Adaptive Hidden Layers for Mobile Gesture Recognition</strong></h2>
+								<h4>Ting-Kuei Hu, Yen-Yu Lin, Pi-Cheng Hsiu<h4>
+							</header>
+							
+						</div>
+					</section>
+
+				<!-- Abstract -->
+					<section id="abstract" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Abstract</h2>
+							</header>
+							<body>
+								<p align="left">This paper addresses two obstacles hindering advances in accurate
+									gesture recognition on mobile devices. First, gesture
+									recognition performance is highly dependant on feature selection,
+									but optimal features typically vary from gesture to
+									gesture. Second, diverse user behaviors and mobile environments
+									result in extremely large intra-class variations.</p> 
+								<p align="left">We tackle these issues by introducing a new network layer, called
+									an adaptive hidden layer (AHL), to generalize a hidden layer
+									in deep neural networks and dynamically generate an activation
+									map conditioned on the input. To this end, an AHL
+									is composed of multiple neuron groups and an extra selector.
+									The former compiles multi-modal features captured by
+									mobile sensors, while the latter adaptively picks a plausible
+									group for each input sample.</p>  
+								<p align="left">The AHL is end-to-end trainable
+									and can generalize an arbitrary subset of hidden layers.
+									Through a series of AHLs, the great expressive power from
+									exponentially many forward paths allows us to choose proper
+									multi-modal features in a sample-specific fashion and resolve
+									the problems caused by the unfavorable variations in mobile
+									gesture recognition.The proposed approach is evaluated on
+									a benchmark for gesture recognition and a newly collected
+									dataset. Superior performance demonstrates its effectiveness.</p>  
+							</body>
+							<header>
+								<h2>Citation</h2>
+							</header>
+							<div class="responsive-table">
+						      <table class="cite">
+						        <tbody align="left">
+					        	<tr>
+					            <td>@inproceeding{</td>
+					            <td>AHL, </td>
+						          </tr>
+						          <tr>
+						            <td></td>
+						            <td>title = {Learning Adaptive Hidden Layers for Mobile Gesture Recognition}, </td>
+						          </tr>
+						          <tr>
+						            <td></td>
+						            <td>author = {Hu, Ting-Kuei and Lin, Yen-Yu and Hsiu, Pi-Cheng},</td>
+						          </tr>
+						           <tr>
+						            <td></td>
+						            <td>booktitle = {AAAI Conference on Artificial Intelligence},</td>
+						          </tr>
+						          <tr>
+						            <td></td>
+						            <td>year = {2018}</td>
+						          </tr>
+						          <tr>
+					            <td>}</td>
+					            <td></td>
+						          </tr>
+						        </tbody>
+						      </table>
+						</div>
+
+						<br/><br/>
+
+						</div>
+					</section>
+
+				<!-- Paper -->
+					<section id="paper" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Paper</h2>
+							</header>
+
+							<a target="_blank" href="6032-F.pdf" class="image featured"><img src="images/paper.jpg" alt="" /></a>
+
+
+						</div>
+					</section>
+				<!-- Method -->
+					<section id="method" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Method</h2>
+							</header>
+							<img class="AHL" src="images/AHL.jpg" width="50%" height="50%" align="left" style="margin:0px 20px" alt=""/>
+								<h3 align="left">Adaptive Hidden Layer</br></h3>
+								<h5 align="left">AHL generalizes a hidden layer in DNNs and can dynamically generate an
+									appropriate activation map for a given input. An AHL is composed of multiple neuron groups and an extra selector. 
+									Each training data can be well processed by at least one group, while the selector that
+									implements softmax normalization can dynamically pick a plausible group for each input sample.
+									</br></br>
+								</h5>
+						</div>
+					</section>
+				<!-- Result -->
+					<section id="result" class="two">
+						<div class="container">
+							<header>
+								<h2>Result</h2>
+							</header>
+							<img class="IsoGD" src="images/IsoGD.jpg" width="50%" height="50%" align="right" style="margin:20px 0px" alt=""/>
+								<h3 align="left">IsoGD dataset</br></h3>
+								<h5 align="left">This dataset includes 47933 RGB-D gesture videos.   
+									Each RGB-D video represents one gesture only, and there are 249 gestures labels performed by 21 different individuals.</br>
+									Due to the lack of the data labels in the testing subset, our approach and the competing approaches are trained on the training subset and
+									evaluated on the validation subset.
+									</br></br>
+								</h5>
+									
+								<table class="bordered striped">
+						        <thead>
+						          <tr>
+						              <th data-field="method">network</th>
+						              <th data-field="accuracy">accuracy</th>
+						          </tr>
+						        </thead>
+						        <tbody>
+					        	  <tr>
+						            <td>C3D(RGB only)</td>						           
+						            <td>37.30%</td>
+						          </tr>	
+								  <tr>
+						            <td>C3D(Depth only)</td>						           
+						            <td>40.50%</td>
+						          </tr>	
+								  <tr>
+						            <td>C3D(RGB+Depth)</td>						           
+						            <td>49.20%</td>
+						          </tr>	
+						          <tr>
+						            <td>C3D+ConvLSTM(RGB only)</td>						            
+						            <td>43.88%</td>
+						          </tr>								          
+								  <tr>
+						            <td>C3D+ConvLSTM(Depth only)</td>						            
+						            <td>44.66%</td>
+						          </tr>	
+								  <tr>
+						            <td>C3D+ConvLSTM(RGB+Depth only)</td>						            
+						            <td>51.02%</td>
+						          </tr>	
+								  <tr>
+						            <td><span style="font-weight:bold;">Ours(RGB only)</span></td>						            
+						            <td><span style="font-weight:bold;">44.88%</span></td>
+						          </tr>
+								  <tr>
+						            <td><span style="font-weight:bold;">Ours(Depth only)</span></td>						            
+						            <td><span style="font-weight:bold;">48.96%</span></td>
+						          </tr>
+						          <tr>
+						            <td><span style="font-weight:bold;">Ours(RGB+Depth)</span></td>						            
+						            <td><span style="font-weight:bold;">54.14% (54.50 for updated version)</span></td>
+						          </tr>
+						        </tbody>
+						      </table>
+							 
+								<iframe align="right" width="720" height="405" src="https://www.youtube.com/embed/DhGmR1oif1Q" style="margin:20px 0px" frameborder="0" allowfullscreen></iframe>
+								<h3 align="left">Our collected dataset</br></h3>
+								<h5 align="left">We collected a dataset for mobile handed gestures. These gestures were recorded
+									with both the videos captured by the cameras of the smartphones and the 3-axis acceleration (ACCE) captured by the
+									accelerometers of the smart watches.</br></br>
+									We implement a prototype system on Samsung Note5 and Moto360. A video of the demonstration of our system is shown on the right.
+									</br></br></br>
+						         </h5>
+								 <table class="bordered striped">
+						        <thead>
+						          <tr>
+						              <th data-field="net">network</th>
+						              <th data-field="acc">accuracy</th>
+						          </tr>
+						        </thead>
+						        <tbody>
+					        	  <tr>
+						            <td>DAE + HOG</td>						        
+						            <td>81.52%</td>
+						          </tr>							          
+								  <tr>
+						            <td>DAE + ACCE</td>						        
+						            <td>76.24%</td>
+						          </tr>	
+								  <tr>
+						            <td>multi-model DAE</td>						        
+						            <td>86.48%</td>
+						          </tr>	
+
+						          <tr>
+						            <td><span style="font-weight:bold;">Our</span></td>						            
+						            <td><span style="font-weight:bold;">90.57%</span></td>
+						          </tr>
+						        </tbody>
+						      </table>
+
+						</div>		   								
+					</section>					
+					
+
+				<!-- Code -->
+					<section id="code" class="six">
+						<div class="container">
+
+							<header>
+								<h2>Code and Dataset</h2>
+							</header>
+							<ul class="icons">
+							<li><p>The codes for reproducing the result of our approach on IsoGD dataset and our collected dataset will be available at github.<br /><br /></p><a target="_blank" href="https://github.com/tingkuei/AHL" class="icon label2 fa-github"><span class="label">Github</span></a></li>
+							<li><p>Our collected dataset can downloaded from the link below.<br /><br /></p><a href="https://drive.google.com/open?id=1E8RU9L6cRqxLu-WdT8d4o0rL6f6E2_JM" download="gesture_dataser.zip">Download</a></li>
+							</ul>					
+					</section>
+					
+
+
+
+			
+							<!-- Contact -->
+					<section id="contact" class="one">
+						<div class="container">
+
+							<header>
+								<h3 align="middle">Contact</h3>
+							</header>
+
+							<ul id = "member-list">
+								<li>
+									<div class= "member";>
+										<a target="_blank" href="http://emclab.citi.sinica.edu.tw/"><div class="contactSelfie"><img src="images/tkhu.jpg"/></div></a>
+										<p> Ting-Kuei Hu </p>
+										<ul class="icons">
+										<li><a href="https://github.com/tingkuei" class="icon circle fa-github"><span class="label">Github</span></a></li>
+										<li><a href="mailto:tkhu@citi.sinica.edu.tw" class="icon circle fa-envelope-o"><span class="label">Email</span></a></li>	
+									</ul>
+									</div>
+								</li>
+								<li>
+									<div class= "member">
+										<a target="_blank" href="https://www.citi.sinica.edu.tw/pages/yylin/"><div class="contactSelfie"><img src="images/yylin.jpg"/></div></a>
+										<p> Yen-Yu Lin </p>
+										<ul class="icons">
+										<li><a href="mailto:yylin@citi.sinica.edu.tw" class="icon circle fa-envelope-o"><span class="label">Email</span></a></li>
+									</ul>
+									</div>
+								</li>
+								<li>
+									<div class= "member">
+										<a target="_blank" href="https://www.citi.sinica.edu.tw/pages/pchsiu"><div class="contactSelfie"><img src="images/pchsiu.jpg"/></div></a>
+										<p> Pi-Cheng Hsiu </p>
+										<ul class="icons">
+										<li><a href="mailto:pchsiu@citi.sincia.edu.tw" class="icon circle fa-envelope-o"><span class="label">Email</span></a></li>
+									</ul>
+									</div>
+								</li>
+								
+								
+							</ul>
+						</div>
+					</section>
+
+			<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>EMCLab & CVLab, Academia Sinica &copy; 2018</li>
+					</ul>
+
+			</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
