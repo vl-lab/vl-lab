@@ -1,0 +1,16 @@
+Figure 2, Figure 3 不是向量圖. 向量圖會像Figure 1那樣是可以圈選文字.
+可以在ppt將那一頁投影片列印成PDF, GS204上可以用 "pdfcrop in.pdf out.pdf"輸出切白邊的圖.
+
+LINE 107, 186, 244, 299: an -> a
+LINE 202: 27$x$ -> 27$\times$
+LINE 081: 不是規定, 但老師曾提醒過我citation number要由小到大.
+LINE 527: Pytorch -> PyTorch
+LINE 528: 完整名稱是"NVIDIA GeForce RTX 2080 Ti", 不過只要可以認出是RTX2080Ti就OK.
+LINE 548: Ablation Study -> Ablation Studies
+LINE 553: 出現"Net 1", 但LINE 559出現 "Net1"
+Figure 8: 通常這種會看不出多少epochs會收斂, x軸在多一點可能可以看到他收斂. 我不確定, 但對於你的方法搞不好看不看到收斂是沒什麼差的.
+LINE 674: 你可以評估100 (ms)換成 100$ms$ 會不會比較好.
+LINE 688: In Our Network -> in Our Network
+LINE 857: Conclusion -> Conclusions
+
+Ref.[2], [9], [18], [27] : 沒有出處, 會議名稱?
